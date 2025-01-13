@@ -11,22 +11,14 @@ export const Header = () => {
       <nav className="relative bg-white shadow ">
         <div className="container px-6 py-3 mx-auto md:flex">
           <div className="flex items-center justify-between">
-            <a href="#">
-              <Image
-                width={50}
-                height={50}
-                className="w-auto h-6 sm:h-7"
-                src="https://merakiui.com/images/full-logo.svg"
-                alt="Logo"
-              />
-            </a>
+            <h2 className='whitespace-nowrap font-bold text-2xl'>Dua Page</h2>
 
             {/* Mobile Menu Toggle */}
             <div className="flex lg:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="text-gray-800 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                className="text-gray-800"
                 aria-label="toggle menu"
               >
                 {isOpen ? (
@@ -68,19 +60,19 @@ export const Header = () => {
             <div className="flex flex-col px-2 -mx-4 md:flex-row md:mx-10 md:py-0">
               <a
                 href="#"
-                className="px-2.5 py-2 text-gray-800 transition-colors duration-300 transform rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2"
+                className="px-2.5 py-2 text-gray-800  transform rounded-lg hover:text-green-500 transition-colors duration-500 md:mx-2"
               >
                 Home
               </a>
               <a
                 href="#"
-                className="px-2.5 py-2 text-gray-800 transition-colors duration-300 transform rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2"
+                className="px-2.5 py-2 text-gray-800 hover:text-green-500 transition-colors duration-500 md:mx-2"
               >
                 About
               </a>
               <a
                 href="#"
-                className="px-2.5 py-2 text-gray-800 transition-colors duration-300 transform rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2"
+                className="px-2.5 py-2 text-gray-800 hover:text-green-500 transition-colors duration-500 md:mx-2"
               >
                 Contact
               </a>
